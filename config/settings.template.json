@@ -1,0 +1,7 @@
+{
+  "resource_group": "<RESOURCE_GROUP_NAME>",
+  "subscription_id": "<SUBSCRIPTION_ID>",
+  "location": "<YOUR_LOCATION>",
+  "k8s_cluster_name": "<K8S_CLUSTER_NAME>",
+  "keyvault_name": "<KEYVAULT_NAME>"
+}

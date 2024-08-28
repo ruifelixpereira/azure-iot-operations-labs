@@ -1,0 +1,3 @@
+Data Source,Name,Queue Size,Observability Mode,Sampling Interval Milliseconds,Capability Id
+ns=3;s=FastUInt10,temperature,,none,,temperature
+ns=3;s=FastUInt100,Tag 10,,none,,Tag 10

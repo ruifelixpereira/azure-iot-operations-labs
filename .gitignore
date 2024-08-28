@@ -1,0 +1,8 @@
+old_stuff
+MYLOG.md
+*.tfplan
+.terraform
+.terraform.lock*
+terraform.tfstate*
+.env*
+settings.json
