@@ -6,7 +6,7 @@ References:
 
 ## Lab 01. Create testing environment with AIO in cloud
 
-If you need to create a testing environment using an AKS, arc-enabling AKS and then instal Azure IoT Operations on it, you can use the scripts provided. Create a copy of the file `config/settings.template.json` with the name `config/settings.json`, customize the settings and then you can use the following scripts:
+If you need to create a testing environment using an AKS, arc-enabling AKS and then install Azure IoT Operations on it, you can use the scripts provided. Create a copy of the file `config/settings.template.json` with the name `config/settings.json`, customize the settings and then you can use the following scripts:
 
 ```bash
 cd lab01-setup-new-site
@@ -34,7 +34,7 @@ kubectl get all -n azure-iot-operations
 
 ### Troubleshooting
 
-In ase a VM SKU is not available, you can check what is available with the following command:
+In case a VM SKU is not available, you can check what is available with the following command:
 
 ```bash
 az vm list-skus --location westus --size Standard_D --all --output table
@@ -112,7 +112,7 @@ Now MQTTUI doesn't support MQTT 5 enhanced auth that AIO Broker 0.6 uses w/ K8s 
 
 # Lab 04. Create a dataflow to copy between 2 local MQ topics
 
-Check then default dataflow profile:
+Check the default dataflow profile:
 
 ```bash
 kubectl get dataflowprofile -n azure-iot-operations
@@ -123,7 +123,7 @@ profile
 
 In file `lab04-simple-dataflow/simple-copy-flow.yaml` make sure you are using this existing profile or create a new one.
 
-Create a simple dataflow that copies all entreis from topic `azure-iot-operations/data/thermostat` to a new topic `thermostat-copy`:
+Create a simple dataflow that copies all entries from topic `azure-iot-operations/data/thermostat` to a new topic `thermostat-copy`:
 
 ```bash
 cd lab04-simple-dataflow
@@ -146,7 +146,7 @@ mosquitto_sub --host aio-mq-dmqtt-frontend --port 8883 --topic "thermostat-copy/
 
 # Lab 5. Create a dataflow to send data to the cloud
 
-First we need to create an Azure Event Hub for where we will send events using Kafka protocol.
+First, we need to create an Azure Event Hub for where we will send events using Kafka protocol.
 
 ```bash
 cd lab05-to-cloud-dataflow
